@@ -5,7 +5,6 @@ export async function seed(knex: Knex) {
     {
       name: "Paladar",
       document: "63004943000102",
-      date_time: new Date(),
       address: JSON.stringify({
         street: "Avenida Tenente Armindo Leal Gonçalves",
         neighborhood: "Sargento Roncalli",

@@ -5,7 +5,7 @@ export async function up(knex: Knex) {
         table.increments('id_store').primary();
         table.string('name', 30).notNullable();
         table.string('document', 14).notNullable();
-        table.timestamp('date_time').defaultTo(knex.fn.now());
+        table.timestamp('date_time', { useTz: true }).defaultTo(knex.fn.now());
         table.json('address').notNullable();
     })
 }

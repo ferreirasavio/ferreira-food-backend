@@ -7,8 +7,8 @@ const roomsController = new StoreController();
 const usersController = new UsersController();
 
 routes.get('/store', roomsController.index)
-routes.post('/store', roomsController.create)
-routes.delete('/store', roomsController.remove)
+routes.post('/store/create', roomsController.create)
+routes.delete('/store/remove', roomsController.remove)
 
 routes.post('/users/signup', usersController.create)
 routes.post('/users/signin', usersController.login)
